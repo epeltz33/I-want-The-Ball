@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Share a red ball across two screens in real time." />
+    <meta name="theme-color" content="#10141c" />
+    <title>I Want The Ball</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="landing">
+    <main class="card">
+      <div class="logo-ball" aria-hidden="true"></div>
+      <h1>I Want The Ball</h1>
+      <p class="tagline">
+        One red ball, two screens. Put your devices side by side and fling it off the edge to your
+        partner.
+      </p>
+
+      <button id="create" class="button button-primary" type="button">Create a room</button>
+
+      <form id="join" class="join" autocomplete="off">
+        <label for="code">Have a code?</label>
+        <div class="join-row">
+          <input
+            id="code"
+            name="code"
+            inputmode="text"
+            autocapitalize="off"
+            spellcheck="false"
+            maxlength="12"
+            placeholder="e.g. k3x9mq"
+            required
+          />
+          <button class="button" type="submit">Join</button>
+        </div>
+        <p id="join-error" class="error" role="alert" hidden></p>
+      </form>
+    </main>
+    <script type="module" src="/js/landing.js"></script>
+  </body>
+</html>

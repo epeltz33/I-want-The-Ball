@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#10141c" />
+    <title>I Want The Ball</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="room">
+    <canvas id="court" aria-label="Play area. Drag and fling the ball."></canvas>
+
+    <header class="hud">
+      <div class="hud-row">
+        <a class="brand" href="/">I Want The Ball</a>
+        <span class="room-code">Room <strong id="room-code"></strong></span>
+      </div>
+      <p id="status" class="status" role="status" aria-live="polite">Connecting…</p>
+      <button id="share" class="button" type="button" hidden>Copy invite link</button>
+    </header>
+
+    <script src="/socket.io/socket.io.min.js"></script>
+    <script type="module" src="/js/game.js"></script>
+  </body>
+</html>

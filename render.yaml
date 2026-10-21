@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: i-want-the-ball
+    runtime: node
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: '22'
