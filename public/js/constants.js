@@ -4,7 +4,7 @@
 // throw's y position and velocity meaningful on any screen size: a ball leaving halfway up
 // a phone arrives halfway up a monitor, travelling the same number of screen-heights/sec.
 
-export const BALL_RADIUS = 0.06;
+export const BALL_RADIUS = 0.15;
 
 // Exponential velocity damping per second. Low = air hockey glide.
 export const FRICTION = 0.35;
